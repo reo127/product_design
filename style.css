@@ -27,9 +27,22 @@
     justify-content: space-around;
 }
 
+.js {
+    justify-content: center;
+}
+
+.fw{
+    flex-wrap: wrap;
+}
+
 .tw {
     color: #fff;
 }
+
+.bg_red {
+    background: #E21717;
+}
+
 
 /* ================================ */
 /* ================ Navber ================ */
@@ -104,6 +117,271 @@ ul>li>a:hover {
 
 .hero_btn:hover {
     background-color: #0D0D0D;
-   border-radius: 10px;
-   padding: .9rem 2.3rem;
+    border-radius: 10px;
+    padding: .9rem 2.3rem;
 }
+
+
+/* ================================ */
+/* ================ Service Section ================ */
+/* ================================ */
+.services {
+    z-index: 999;
+}
+
+.service_cards {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6rem;
+    flex-wrap: wrap;
+
+}
+
+.service_card {
+    max-width: 25rem;
+    background: #333;
+    padding: 3rem;
+    margin: 0rem 1rem;
+    margin-top: 2rem;
+}
+
+.service_card>i {
+    font-size: 8rem;
+    color: #E21717;
+    background: #333;
+}
+
+.service_card>h1 {
+    font-size: clamp(1.5rem, 3vw, 3rem);
+    margin-top: 1.5rem;
+    background: #333;
+}
+
+.service_card>p {
+    font-size: 1.5rem;
+    margin: 1rem 0rem;
+    background: #333;
+}
+
+.know_more_bt {
+    color: #E21717;
+    font-size: 1.2rem;
+    font-weight: 700;
+    background: #333;
+    justify-content: space-between;
+    max-width: 9rem;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.know_more_bt:hover {
+    max-width: 10rem;
+}
+
+.card_active {
+    background: #E21717;
+    color: #fff;
+}
+
+.know_more_bt>p {
+    background: #333;
+}
+
+.know_more_bt>i {
+    background: #333;
+}
+
+/* table section */
+
+table {
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border-spacing: 2rem;
+    margin-bottom: 6rem;
+    margin-top: 2rem;
+}
+
+td>h1 {
+    color: #E21717;
+}
+
+.td_mail {
+    font-size: clamp(1.3rem, 3vw, 2rem);
+}
+
+.td_mail>h1 {
+    /* font-size: 7rem; */
+    font-size: clamp(1.3rem, 7vw, 8rem);
+    font-weight: 800;
+}
+
+.td_sub {
+    background: #333;
+    font-size: clamp(1.3rem, 1vw, 2rem);
+    padding: 1rem 5rem;
+}
+
+.td_sub>h1 {
+    background: #333;
+    font-size: clamp(1rem, 4vw, 3rem);
+}
+
+.td_sub>p {
+    background: #333;
+}
+
+.backbround {
+    height: 100vh;
+    background: #222;
+    width: 50%;
+    z-index: -99;
+    position: absolute;
+}
+
+
+/* ================================ */
+/* ================ Project Section ================ */
+/* ================================ */
+
+.project_headings {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.heading_text>h1 {
+    color: #fff;
+    font-size: clamp(1rem, 4vw, 3rem);
+}
+
+.heading_text>p {
+    color: #fff;
+}
+
+.thembnail_image>img {
+    width: 33rem;
+}
+
+.btn {
+    all: unset;
+    color: #fff;
+    background: #E21717;
+    border: 3px solid #E21717;
+    padding: .8rem 2rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #0D0D0D;
+    border-radius: 10px;
+    padding: .9rem 2.3rem;
+}
+
+.project_cards {
+    margin-top: 2rem;
+}
+
+.project_cards > h3{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-top: 1rem;
+}
+
+.thembnail_image {
+    background: #333;
+    padding: 6rem 2rem;
+    margin-right: 2rem;
+}
+
+.music_img {
+    padding: 7.7rem 2rem;
+}
+
+.bg_transperent {
+    background: transparent;
+}
+
+
+/* ================================ */
+/* ================ Bottom Section ================ */
+/* ================================ */
+
+.buttom_left {
+    max-width: 40rem;
+}
+
+.buttom_left > h1 {
+    color: #fff;
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.buttom_left > p {
+    color: #fff;
+    margin-top: 1rem;
+}
+
+.bg_style {
+    justify-content: space-around;
+    margin: 7rem 7rem;
+}
+
+.button_section > ul > li > a {
+    all: unset;
+    color: #fff;
+    margin: 0rem 3rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .2 ease-in-out;
+}
+
+.button_section > ul > li > a:hover{
+    color: #E21717;
+}
+
+
+/* ================================ */
+/* ================ Bottom Section ================ */
+/* ================================ */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #333;
+    padding: 3rem 0rem;
+    margin-top: 6rem;
+}
+
+footer >img {
+    position: absolute;
+    left: 20rem;
+    background: #333;
+}
+
+.social_icons {
+    color: #fff;
+    font-size: 2rem;
+    margin: 0rem 2rem;
+    cursor: pointer;
+    background: #333;
+}
+
+.fa-brands {
+    margin: 0rem 2rem;
+    background: #333;
+    transition: .2s ease-in-out;
+}
+
+.fa-brands:hover {
+    color: #E21717;
+}
+
+
