@@ -6,10 +6,13 @@
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
-    background-color: #0D0D0D;
     font-family: 'Montserrat', sans-serif;
 }
 
+html{
+    background-color: #0D0D0D;
+
+}
 
 .f {
     display: flex;
@@ -65,6 +68,28 @@ ul>li>a:hover {
     color: #E21717;
 }
 
+@media screen and (max-width: 1138px) {
+    nav {
+        margin: 2rem 1rem;
+        flex-direction: column;
+    }
+
+    nav > ul {
+        margin-top: 1rem;
+    }
+
+    ul>li>a {
+        margin-right: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 598px) {
+    ul>li>a {
+        font-size: .5rem;
+    }
+}
+
+
 
 /* ================================ */
 /* ================ Hero Section ================ */
@@ -119,6 +144,26 @@ ul>li>a:hover {
     background-color: #0D0D0D;
     border-radius: 10px;
     padding: .9rem 2.3rem;
+}
+
+
+@media screen and (max-width: 598px) {
+    .hero>img {
+        width: 25rem;
+    }
+    .hero_right {
+        margin-left: 2rem;
+        max-width: 46rem;
+        margin-top: 2rem;
+    }
+    .hero_btn {
+        padding: .5rem 1.2rem;
+        margin-bottom: 2rem;
+        font-size: 1.2rem;
+        margin-top: 2rem;
+    }
+
+
 }
 
 
@@ -193,16 +238,16 @@ ul>li>a:hover {
     background: #333;
 }
 
+
+
 /* table section */
 
 table {
     color: #fff;
     text-align: center;
-    display: flex;
-    justify-content: center;
+    display: table;
     border-spacing: 2rem;
-    margin-bottom: 6rem;
-    margin-top: 2rem;
+    margin: 2rem auto;
 }
 
 td>h1 {
@@ -210,7 +255,7 @@ td>h1 {
 }
 
 .td_mail {
-    font-size: clamp(1.3rem, 3vw, 2rem);
+    font-size: clamp(.5rem, 3vw, 2rem);
 }
 
 .td_mail>h1 {
@@ -242,6 +287,26 @@ td>h1 {
     position: absolute;
 }
 
+
+
+@media screen and (max-width: 598px) {
+    .service_card>i {
+        font-size: 4rem;
+    }
+
+    .td_sub {
+        padding: 1rem 1rem;
+    }
+
+    .td_sub:nth-of-type(3) {
+        display: none;
+    }
+
+    .td_mail {
+        position: absolute;
+    }
+    
+}
 
 /* ================================ */
 /* ================ Project Section ================ */
@@ -309,6 +374,17 @@ td>h1 {
     background: transparent;
 }
 
+@media screen and (max-width: 701px) {
+    .thembnail_image>img {
+        max-width: 17rem;
+    }
+
+    .thembnail_image {
+        background: #333;
+        padding: 3rem 1rem;
+    }
+}
+
 
 /* ================================ */
 /* ================ Bottom Section ================ */
@@ -344,6 +420,35 @@ td>h1 {
 
 .button_section > ul > li > a:hover{
     color: #E21717;
+}
+
+
+@media screen and (max-width: 701px) {
+    .bg_style {
+        flex-direction: column;
+        margin: 4rem 3rem;
+    }
+
+    .buttom_left {
+        margin-bottom: 3rem;
+    }
+
+    .button_section > ul > li > a {
+        margin: 0rem 0.5rem;
+    }
+
+    footer{
+        padding: 2rem 0rem;
+    }
+
+    .fa-brands{
+        margin: 0rem .8rem;
+    }
+
+    footer >img {
+        display: none;
+    }
+
 }
 
 
@@ -384,4 +489,21 @@ footer >img {
     color: #E21717;
 }
 
+
+
+
+/* ================================================================================ */
+
+
+
+
+/* ================================ */
+/* ================ Responsive ================ */
+/* ================================ */
+
+@media screen and (max-width: 1138px) {
+    .hero {
+        margin: 0rem 0rem;
+    }
+}
 
